@@ -1,0 +1,48 @@
+main{
+    color: #fff;
+}
+
+h1{
+    color:dodgerblue;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.heading{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: left;
+}
+
+.heading h1{
+    text-transform: capitalize;
+    text-align: center;
+    padding-left: 20px;
+    color: #fff;
+}
+
+table{
+    display: block;
+    margin: auto;
+    width: 90%;
+    font-size: 1em;
+    color: rgb(255, 255, 255);;
+}
+
+table tbody tr td:nth-last-child(1){
+    color: dodgerblue;
+}
+
+.nav-btn{
+    padding: .5em;
+    margin: 5px;
+    background-color: midnightblue;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    width: 20%;
+    text-align: left;
+    text-transform: capitalize;
+}

@@ -1,0 +1,29 @@
+<main>
+    <h3>Welcome <%= req.user.lastname%> <%= req.user.firstname%> <%= req.user.middlename%></h3>
+    <div class="boxes">
+        <a href="/account">
+            <div class="box1">
+                <i class="fas fa-user fa-2x"></i>
+                <h2>account</h2>
+            </div>
+        </a>
+        <a href="/history">
+            <div class="box2">
+                <i class="fas fa-history fa-2x"></i>
+                <h2>history</h2>
+            </div>
+        </a>
+        <a href="/balance">
+            <div class="box3">
+                <i class="fas fa-balance-scale fa-2x"></i>
+                <h2>balance</h2>
+            </div>
+        </a>
+        <a href="/auth/logout">
+            <div class="box4">
+                <i class="fas fa-sign-out-alt fa-2x"></i>
+                <h2>logout</h2>
+            </div>
+        </a>
+    </div>
+</main>

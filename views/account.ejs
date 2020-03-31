@@ -1,0 +1,32 @@
+<main>
+    <div class="heading">
+        <a href="/" class="btn btn-primary m-3">
+            Back
+        </i></a>
+        <h1>account info</h1>
+    </div>
+    <div class="container bg-dark" style="border-radius: 10px;">
+        <ul class="list-group mb-5">
+            <li class="list-group-item d-flex align-items-center">
+              <span class="text-dark">Account Number: </span> &nbsp; 
+              <span class="text-primary"><%= req.user.account_number %></span> &nbsp; 
+            </li>
+            <li class="list-group-item d-flex  align-items-center">
+                <span class="text-dark">Name: </span> &nbsp; 
+                <span class="text-primary"> <%= req.user.lastname%> <%= req.user.firstname%> <%= req.user.middlename%></span> &nbsp; 
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <span class="text-dark">Phone:</span> &nbsp; 
+                <span class="text-primary"><%= req.user.phone_number %></span> &nbsp; 
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <span class="text-dark">Email:</span> &nbsp; 
+                <span class="text-primary"><%= req.user.email %></span> &nbsp; 
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+                <span class="text-dark">User ID:</span> &nbsp; 
+                <span class="text-primary"><%= req.user.user_id %></span> &nbsp; 
+            </li>
+          </ul>
+    </div>
+</main>

@@ -1,0 +1,33 @@
+<main>
+    <div class="heading">
+        <a href="/" class="btn btn-primary m-3">
+            Back
+        </i></a>
+        <h1>tranaction history</h1>
+    </div>
+    <div class="container text-dark">
+        <ul class="list-group mb-5">
+            <% req.user.history.forEach(hist => {%>
+                <% if(hist.transaction_type == "debit") { %>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="text-danger">Debit</span> &nbsp; 
+                        <span class="text-danger">(N)-<%= hist.debit %></span> &nbsp; 
+                        <span class="text-success">(N)<%= hist.available_balance %></span>
+                        <span class="badge badge-primary badge-pill">
+                            <a href="/detail/<%=hist.id%>" class="text-white">view</a>
+                         </span>
+                      </li>
+                      <br>
+                <% } else{ %>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="text-success">Credit</span> &nbsp; 
+                        <span class="text-success">(N)<%= hist.credit %></span> &nbsp; 
+                        <span class="text-success">(N)<%= hist.available_balance %></span>
+                        <a href="/detail/<%=hist.id%>" class="badge badge-primary badge-pill">view</a>
+                    </li>
+                    <br>
+                <% } %>
+            <% }) %>
+          </ul>
+    </div>
+</main>

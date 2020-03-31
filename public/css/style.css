@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    margin-bottom: 4rem;
+}
+
+a{
+    text-decoration: none;
+    overflow: hidden;
+}
+
+body{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 9vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(56, 56, 56);
+    box-shadow: 4px 3px 5px rgb(19, 19, 19);
+}
+
+header a{
+    text-decoration: none;
+    color: rgba(241, 75, 14, 0.63);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+
+header .diff{
+    color: dodgerblue;
+}
+
+
+main {
+    height: 100vh;
+    width: 100%;
+    margin-top: 2.7em;
+    background: rgb(19, 22, 29);
+    background-size: 350px;
+    background-position: top;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+main h3{
+    margin-top: 15%;
+    color: rgb(248, 246, 246);
+    text-align: center;
+}
+
+.boxes{
+    position: absolute;
+    margin: 2em auto;
+    width: 100%;
+    height: 60vh;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 49% 49%;
+}
+
+.boxes div{
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(22, 22, 22);
+    box-shadow: 3px 3px 5px #000;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.boxes h2{
+    font-size: 1.4em;
+}
+
+.boxes .box1{
+    background-color: rgba(104, 3, 50, 0.575);
+}
+
+.boxes .box2{
+    background-color: rgba(19, 46, 82, 0.637);
+}
+
+.boxes .box3{
+    background-color: rgba(77, 90, 2, 0.63);
+}
+
+.boxes .box4{
+    background: rgba(163, 46, 3, 0.63);
+}

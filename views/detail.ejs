@@ -1,0 +1,52 @@
+<main>
+    <div class="heading">
+        <a href="/" class="btn btn-primary m-3">
+            Back
+        </i></a>
+        <h1>tranaction</h1>
+    </div>
+    <div class="container text-dark">
+        <ul class="list-group mb-5">
+            <li class="list-group-item justify-content-between align-items-center">
+              <span class="">Type: </span>
+              <span class=""></span>
+              <span class="text-info"><%= hist.transaction_type %></span>
+            </li>
+            <br>
+            <li class="list-group-item  justify-content-between align-items-center">
+              <span class="">Amount: </span>
+              <span class="text-info">(N)<%= hist.amount %></span>
+            </li>
+            <br>
+            <li class="list-group-item justify-content-between align-items-center">
+              <span class="">Current Balance: </span>
+              <span class="text-info">(N)<%= hist.current_balance %></span>
+            </li>
+            <br>
+            <li class="list-group-item justify-content-between align-items-center">
+              <span class="">Available Balance: </span>
+              <span class="text-info">(N)<%= hist.available_balance %></span>
+            </li>
+            <br>
+            <li class="list-group-item  justify-content-between align-items-center">
+              <span class="">Description: </span>
+              <span class="text-info"><%= hist.description %></span>
+            </li>
+            <br>
+            <li class="list-group-item justify-content-between align-items-center">
+              <span class="">Teller ID: </span>
+              <span class="text-info"><%= hist.teller_id %></span>
+            </li>
+            <br>
+            <li class="list-group-item justify-content-between align-items-center">
+              <span class="">Value Date: </span>
+              <span class="text-info"><%= new Date(hist.date).toLocaleDateString() %></span>
+            </li>
+            <br>
+            <li class="list-group-item justify-content-between align-items-center">
+              <span class="">Value Time: </span>
+              <span class="text-info"><%= new Date(hist.date).getHours() %>:<%= padMinutes(new Date(hist.date).getMinutes()) %></span>
+            </li>
+          </ul>
+    </div>
+</main>

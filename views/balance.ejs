@@ -1,0 +1,18 @@
+<main>
+    <div class="heading">
+        <a href="/" class="btn btn-primary m-3">
+            Back
+        </i></a>
+        <h1>Acc balance</h1>
+    </div>
+    <a href="/balance" class="btn btn-info" style="display: block; width: 40%; margin: auto;" >
+        <i class="fas fa-refresh"></i>
+        Refresh
+    </a>
+    <div class="container text-white">
+        <div class="container mt-4 bg-dark p-4" style="border-radius: 13px;">
+            <h4 class="text-center">Your account balance as at <%= time %>, <%= date %> is:</h4>
+            <h3 class="text-warning">(N)<%= req.user.balance %></h3>
+        </div>
+    </div>
+</main>
