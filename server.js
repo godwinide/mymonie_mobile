@@ -59,6 +59,7 @@ app.use("/balance", require("./routes/balance"));
 app.use("/detail", require("./routes/detail"));
 
 
+
 app.use("/auth", require("./routes/auth"));
 
 const PORT = process.env.PORT || 4500
