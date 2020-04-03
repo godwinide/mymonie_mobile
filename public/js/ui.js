@@ -1,6 +1,6 @@
 const burger = document.querySelector("#burgerNav");
 const sidebar = document.querySelector(".sidebar");
-const main = document.querySelector("main");
+const main = document.querySelector("body");
 
 let state = {
     navOpen: false
@@ -14,6 +14,8 @@ burger.addEventListener("click", async e => {
 
 // close burgernav
 main.addEventListener("click", e => {
-    state.navOpen = !state.navOpen;
-    sidebar.classList.remove("show-sidebar");
+    setTimeout(()=>{
+        state.navOpen = !state.navOpen;
+        sidebar.classList.remove("show-sidebar");
+    })
 });
